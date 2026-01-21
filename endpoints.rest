@@ -1,0 +1,14 @@
+### Get All Users
+GET http://localhost:8080/users
+
+### Get Single User (PostgresDB: rahim, karim | MySQLDB: jamal, hasina)
+GET http://localhost:8080/user?username=rahim
+
+### Get Non-Existent User
+GET http://localhost:8080/user?username=unknown
+
+### Save New User
+GET http://localhost:8080/save?username=rakib&mobile=01999999999
+
+### Verify Saved User
+GET http://localhost:8080/user?username=rakib

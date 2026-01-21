@@ -30,7 +30,7 @@ type database interface {
 	GetAll() []User
 }
 
-var db database = NewMySQLDB() // swap with NewMySQLDB() to switch
+var db database = NewPostgresDB() // swap with NewMySQLDB() to switch
 
 func main() {
 
